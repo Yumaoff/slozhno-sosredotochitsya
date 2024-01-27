@@ -10,3 +10,19 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root .theme-light {
+  --accent-color: #FF8DCB;
+  --title-color: #FFC2E6;
+  --title-text-color: #353430;
+  --main-text-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --title-color: #FFC2E6;
+    --title-text-color: #353430;
+    --main-text-color: #353430;
+  }
+}

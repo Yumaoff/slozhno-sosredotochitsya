@@ -1,5 +1,111 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  font-family: "IBM Plex Mono";
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.header__theme-menu {
+  grid-area: 2/2/3/3;
+
+}
+
+.header__theme-menu-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+}
+
+.header__theme-menu-item {
+  color: var(--accent-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.rec {
+  grid-area: 1/2/2/3;
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+}
+
+.rec::after {
+  content: url(../images/Ellipse\ 4.svg);
+  justify-self: center;
+  align-self: center;
+  width: 9px;
+  height: 9px;
+}
+
+.main-title {
+  grid-area: 3/1/4/3;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+}
+
+.header-accent-title {
+  grid-area: 4/1/5/3;
+  margin: 55px 0 66px;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  width: 25.038px;
+  height: 24.999px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  position: absolute;
+  left: 340px;
+  top: 10px;
+}
+
+.decorated-zone::after {
+  content: "";
+  width: 25.038px;
+  height: 24.999px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  position: absolute;
+  top: 853px;
+  left: 10px;
+}
+
+
