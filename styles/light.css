@@ -11,11 +11,14 @@
   */
 }
 
-:root .theme-light {
+:root .theme_light {
   --accent-color: #FF8DCB;
   --title-color: #FFC2E6;
   --title-text-color: #353430;
   --main-text-color: #353430;
+  --bg-color: #FFF1F7;
+  --menu-color: #353430;
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,3 +29,15 @@
     --main-text-color: #353430;
   }
 }
+
+.page.theme_light {
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.theme_light .vhs {
+  display: none;
+}
+

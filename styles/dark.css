@@ -11,9 +11,41 @@
   */
 }
 
-:root .theme-dark {
+:root .theme_dark {
   --accent-color: #ff0070;
   --title-color: #DB00FF;
   --title-text-color: #000028;
   --main-text-color: #F1B2CE;
+  --menu-color: #ff0070;
+}
+
+.page.theme_dark {
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vhs {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.vhs::before {
+  content: "rec";
+}
+
+.vhs::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
 }

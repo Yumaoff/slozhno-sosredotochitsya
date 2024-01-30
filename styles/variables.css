@@ -8,5 +8,7 @@
   --title-color: #DB00FF;
   --title-text-color: #000028;
   --main-text-color: #F1B2CE;
+  --bg-text-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
