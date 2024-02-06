@@ -17,6 +17,8 @@
   --title-text-color: #000028;
   --main-text-color: #f1b2ce;
   --menu-color: #ff0070;
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
 .page.theme_dark {
