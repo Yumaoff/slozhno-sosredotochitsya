@@ -1,8 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  display: grid;
-  gap: 40px;
   padding: 10px;
   color: var(--main-text-color);
   font-family: "IBM Plex Mono";
@@ -21,8 +19,7 @@
   grid-template-columns: 1fr 70px;
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
-  height: 97vh;
-  padding: 10px;
+  height: 100vh;
 }
 
 .header__theme-menu {
@@ -73,7 +70,11 @@
 
 .header-accent-title {
   grid-area: 4/1/5/3;
-  margin: 55px 0 66px;
+  justify-self: end;
+  align-self: center;
+  max-width: 355px;
+  margin-top: 55px;
+  margin-bottom: 66px;
 }
 
 .title-decor {
@@ -85,8 +86,17 @@
   margin-bottom: 10px;
 }
 
+.section {
+  margin-bottom: 50px;
+}
+
+.section:first-child {
+  margin-top: 40px;
+}
+
 .section-title {
   color: var(--menu-color);
+  font-size: 18px;
 }
 
 .decorated-zone {
@@ -120,6 +130,10 @@
   gap: 10px;
 }
 
+.gallery__lot {
+  display: block;
+}
+
 .image {
   width: 100%;
   height: 100%;
@@ -132,5 +146,66 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 97vh;
+  height: 100vh;
+}
+
+@media (width > 375px) {
+  .page {
+    padding: 20px;
+  }
+
+  .header-accent-title {
+    max-width: 364px;
+  }
+
+  .main-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .section-grid {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    gap: 20px;
+  }
+
+  .accent-title:first-child {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .section-grid-center {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    grid-template-rows: 70px 1fr;
+    gap: 20px;
+  }
+
+  .section-grid-center ul {
+    grid-area: 2/1/3/3;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .gallery__lot:nth-child(1) {
+    grid-area: 1/1/2/3;
+  }
+
+  .gallery__lot:nth-child(2) {
+    grid-area: 1/3/3/4;
+  }
+
+  .gallery__lot:nth-child(3) {
+    grid-area: 2/1/5/2;
+  }
+
+  .gallery__lot:nth-child(4) {
+    grid-area: 2/2/3/3;
+  }
+
+  .gallery__lot:nth-child(5) {
+    grid-area: 3/2/5/4;
+  }
 }
