@@ -84,9 +84,6 @@
 .accent-title {
   font-size: 18px;
   line-height: 23.4px;
-}
-
-.accent-title {
   margin-top: 20px;
 }
 
@@ -116,6 +113,36 @@
   letter-spacing: 0em;
   text-align: left;
   padding-top: 10px;
+}
+
+.vhs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: var(--accent-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.vhs::before {
+  content: "rec";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.vhs::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
 }
 
 .decorated-zone {
@@ -173,6 +200,7 @@
   font-style: normal;
   line-height: 82.5%; /* 95.7px */
   text-shadow: 4px 4px 0px var(--accent-color);
+  padding-bottom: 10px;
 }
 
 @media (width > 375px) {
@@ -180,12 +208,35 @@
     padding: 20px;
   }
 
+  .header {
+    padding-top: 106px;
+    margin-bottom: 40px;
+  }
+
   .header-accent-title {
     max-width: 364px;
+    margin-top: 417px;
   }
 
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    position: absolute;
+    top: 110px;
+    left: -20px;
+  }
+
+  .accent-title:only-of-type {
+    margin-bottom: 20px;
+  }
+
+
+
+  .decorated-zone::after {
+    bottom: 40px;
+  }
+
+  .section {
+    padding-bottom: 80px;
   }
 
   .section-grid {
@@ -196,7 +247,6 @@
 
   .accent-title:first-child {
     margin-top: 0;
-    margin-bottom: 20px;
   }
 
   .section-grid-center {
@@ -212,7 +262,9 @@
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 780px;
+    gap: 20px;
   }
 
   .gallery__lot:nth-child(1) {
@@ -220,11 +272,11 @@
   }
 
   .gallery__lot:nth-child(2) {
-    grid-area: 1/3/3/4;
+    grid-area:1/3/3/4;
   }
 
   .gallery__lot:nth-child(3) {
-    grid-area: 2/1/5/2;
+    grid-area: 2/1/4/2;
   }
 
   .gallery__lot:nth-child(4) {
@@ -232,6 +284,10 @@
   }
 
   .gallery__lot:nth-child(5) {
-    grid-area: 3/2/5/4;
+    grid-area: 3/2/4/4;
+  }
+
+  .footer-main-title {
+    padding-bottom: 30px;
   }
 }

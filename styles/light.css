@@ -31,6 +31,10 @@
     --menu-color: #353430;
     --bg-image: url(../images/cover-image-light.png);
   }
+
+  .vhs {
+    display: none;
+  }
 }
 
 .page.theme_light {
@@ -43,4 +47,5 @@
 .theme_light .vhs {
   display: none;
 }
+
 
