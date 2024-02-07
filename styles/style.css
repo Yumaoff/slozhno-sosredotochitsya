@@ -20,6 +20,7 @@
   grid-auto-rows: min-content;
   gap: 10px;
   height: 100vh;
+  margin-bottom: 30px;
 }
 
 .header__theme-menu {
@@ -135,7 +136,7 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: 0;
   width: 25.038px;
   height: 24.999px;
