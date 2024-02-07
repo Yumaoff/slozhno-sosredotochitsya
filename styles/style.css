@@ -145,7 +145,7 @@
 
 .gallery {
   display: grid;
-  gap: 10px;
+
 }
 
 .gallery__lot {
