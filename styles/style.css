@@ -310,10 +310,9 @@ a:focus-visible {
   }
 
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
     gap: 20px;
-    max-height: 780px;
   }
 
   .gallery__lot:nth-child(1) {
@@ -396,10 +395,6 @@ a:focus-visible {
 
   .section-title {
     max-width: 315px;
-  }
-
-  .gallery-section {
-    margin-bottom: 290px;
   }
 }
 
