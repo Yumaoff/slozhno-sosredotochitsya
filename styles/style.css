@@ -345,7 +345,7 @@ a:focus-visible {
   }
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .header-accent-title {
     grid-area: 4/1/5/3;
     justify-self: flex-end;
