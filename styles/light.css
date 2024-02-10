@@ -17,22 +17,14 @@
     --bg-color: #fff1f7;
     --menu-color: #353430;
     --bg-image: url(../images/cover-image-light.png);
+    --button-hover-color: rgb(50, 49, 45, 0.4);
   }
 
-  .vhs {
+  .recording-logo {
     display: none;
   }
 }
 
-.page.theme_light {
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.theme_light .vhs {
+.theme_light .recording-logo {
   display: none;
 }
-
-
