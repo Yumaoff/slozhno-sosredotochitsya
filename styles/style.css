@@ -14,7 +14,7 @@
   grid-template-rows: 1fr auto 1fr;
   height: 100vh;
   max-height: 668px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .header__theme-menu {
@@ -112,7 +112,7 @@ a:focus-visible {
   line-height: 23.4px;
 }
 
-.accent-title__first {
+.accent-title__top {
   margin-bottom: 20px;
 }
 
@@ -260,6 +260,7 @@ a:focus-visible {
   .header,
   .footer {
     max-height: 1024px;
+    padding: 20px;
   }
 
   .header__theme-menu {
